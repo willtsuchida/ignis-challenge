@@ -53,4 +53,4 @@ Santos vs Internacional - São Paulo - Rodada 1 (RODADA DUPLA <br>
 <br>
 <br>
 
-**Boa sorte! Estamos anciosos pra ter você na equipe.**
+**Boa sorte! Estamos ansiosos pra ter você na equipe.**
