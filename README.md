@@ -13,22 +13,22 @@ os clubes se enfrentam em dois turnos. Este sistema deverá ter os seguintes rec
 
 1. Ler um TextArea contendo uma lista de times e seu respectivo estado separados
 por “;”
-Exemplo:
-Vasco;Rio de Janeiro 
-Flamengo;Rio de Janeiro
-Palmeiras;São Paulo 
-Santos;São Paulo 
-Cruzeiro;Minas Gerais 
-Internacional;Rio Grande do Sul
+Exemplo:<br>
+Vasco;Rio de Janeiro <br>
+Flamengo;Rio de Janeiro <br>
+Palmeiras;São Paulo <br>
+Santos;São Paulo <br>
+Cruzeiro;Minas Gerais <br>
+Internacional;Rio Grande do Sul <br>
 
 2. Exibir na tela a combinação de jogos para todas as equipes, indicando a cidade do 
 jogo, turno de ida, por exemplo:
-Vasco vs Flamengo - Rio de Janeiro - Rodada 1 
-Palmeiras vs Cruzeiro - São Paulo - Rodada 1 
-Santos vs Internacional - São Paulo - Rodada 1 
-Flamengo vs Santos - Rio de Janeiro - Rodada 2 
-Palmeiras vs Internacional - São Paulo - Rodada 2 
-Cruzeiro vs Vasco - Minas Gerais - Rodada 2
+Vasco vs Flamengo - Rio de Janeiro - Rodada 1 <br>
+Palmeiras vs Cruzeiro - São Paulo - Rodada 1 <br>
+Santos vs Internacional - São Paulo - Rodada 1 <br>
+Flamengo vs Santos - Rio de Janeiro - Rodada 2 <br>
+Palmeiras vs Internacional - São Paulo - Rodada 2 <br>
+Cruzeiro vs Vasco - Minas Gerais - Rodada 2<br>
 
 3. Printar na tela a combinação de jogos de returno, invertendo o mandante de cada 
 jogo do turno de ida.
@@ -46,6 +46,7 @@ Palmeiras vs Cruzeiro - São Paulo - Rodada 1 (RODADA DUPLA) <br>
 Santos vs Internacional - São Paulo - Rodada 1 (RODADA DUPLA <br>
 
 ## Dicas
+* Crie um Fork e em seguida faça o clone.
 * Tente não fazer tudo em um mesmo commit.
 * Assim que terminar, mande um e-mail para contact@ignisplanning.com avisando e não faça mais commits depois disso.
 * O assunto do e-mail deverá ser [ESTAGIO-DEV-2021] – SEU NOME COMPLETO
