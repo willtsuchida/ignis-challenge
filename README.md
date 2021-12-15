@@ -49,7 +49,7 @@ Santos vs Internacional - São Paulo - Rodada 1 (RODADA DUPLA <br>
 * Crie um Fork e em seguida faça o clone.
 * Tente não fazer tudo em um mesmo commit.
 * Assim que terminar, mande um e-mail para contact@ignisplanning.com avisando e não faça mais commits depois disso.
-* O assunto do e-mail deverá ser [ESTAGIO-DEV-2021] – SEU NOME COMPLETO
+* O assunto do e-mail deverá ser [DESAFIO-DEV-2021] – SEU NOME COMPLETO
 
 <br>
 <br>
