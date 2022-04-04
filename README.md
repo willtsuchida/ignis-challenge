@@ -1,4 +1,4 @@
-# DESAFIO IGNIS - 2021
+# DESAFIO IGNIS - 2022
 
 **Parabéns!** <br>
 Ficamos muito felizes por você ter chegado até aqui e agora chegou a hora de botar as mãos no código e mostrar toda a sua habilidade.
@@ -49,7 +49,7 @@ Santos vs Internacional - São Paulo - Rodada 1 (RODADA DUPLA <br>
 * Crie um Fork e em seguida faça o clone.
 * Tente não fazer tudo em um mesmo commit.
 * Assim que terminar, mande um e-mail para contact@ignisplanning.com avisando e não faça mais commits depois disso.
-* O assunto do e-mail deverá ser [DESAFIO-DEV-2021] – SEU NOME COMPLETO
+* O assunto do e-mail deverá ser [DESAFIO-DEV-2022] – SEU NOME COMPLETO
 
 <br>
 <br>
