@@ -1,7 +1,6 @@
 var times = [];
 var rodadas = [];
 
-
 function lerDados() {
     var texto = document.getElementById('texto').value.split('\n');
 
@@ -17,12 +16,6 @@ function lerDados() {
 
 function criarTabelaJogos() {
     var copiaTimes = [...times];
-
-    //se numero de times for impar
-    if (copiaTimes.length % 2 !== 0) {
-        copiaTimes.push({ name: 'SEM JOGO', state: 'SEM JOGO' });
-    }
-
     var tabela = [];
 
     for (var i = 0; i < copiaTimes.length - 1; i++) {
