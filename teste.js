@@ -50,11 +50,10 @@ function criarTabelaJogos() {
     return tabela.concat(returno);
 }
 
-function imprimirRodadas() {
+function executarCampeonato() {
     rodadas = criarTabelaJogos();
     for (var i = 0; i < rodadas.length; i++) {
         var jogosPorEstado = verificaRodadaDupla(rodadas[i]);
-        console.log(jogosPorEstado);
         for (var j = 0; j < rodadas[i].length; j++) {
             var timeMandante = rodadas[i][j].timeMandante;
             var timeVisitante = rodadas[i][j].timeVisitante;
@@ -64,7 +63,7 @@ function imprimirRodadas() {
             } else {
                 document.write('<br/>');
             }
-            document.write(rodadas[i][j].resultado + '<br/>');
+            console.log(timeMandante.nome + ' ' + rodadas[i][j].resultado + ' ' + timeVisitante.nome); //IMPRIMINDO RESULTADO NO CONSOLE
             var placar = rodadas[i][j].resultado.split('x');
             var resultadoMandante = resultado(placar[0], placar[1]);
             if (resultadoMandante == 'vitoria') {
