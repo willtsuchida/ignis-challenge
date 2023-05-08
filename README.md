@@ -8,7 +8,7 @@ Nessa etapa queremos ver como você pensa e estrutura seu código, por isso se l
 O sistema deverá ser desenvolvido utilizando Javascript e HTML.
 
 ## O desafio
-Desenvolver um sistema de torneio de futebol de pontos corridos onde todos 
+Desenvolver um sistema de torneio de futebol de pontos corridos onde todos
 os clubes se enfrentam em dois turnos. Este sistema deverá ter os seguintes recursos:
 
 1. Ler um TextArea contendo uma lista de times e seu respectivo estado separados
@@ -21,7 +21,7 @@ Santos;São Paulo <br>
 Cruzeiro;Minas Gerais <br>
 Internacional;Rio Grande do Sul <br>
 
-2. Exibir na tela a combinação de jogos para todas as equipes, indicando a cidade do 
+2. Exibir na tela a combinação de jogos para todas as equipes, indicando a cidade do
 jogo, turno de ida, por exemplo:
 Vasco vs Flamengo - Rio de Janeiro - Rodada 1 <br>
 Palmeiras vs Cruzeiro - São Paulo - Rodada 1 <br>
@@ -30,15 +30,15 @@ Flamengo vs Santos - Rio de Janeiro - Rodada 2 <br>
 Palmeiras vs Internacional - São Paulo - Rodada 2 <br>
 Cruzeiro vs Vasco - Minas Gerais - Rodada 2<br>
 
-3. Printar na tela a combinação de jogos de returno, invertendo o mandante de cada 
+3. Printar na tela a combinação de jogos de returno, invertendo o mandante de cada
 jogo do turno de ida.
 
 4. Gerar um resultado randômico para cada jogo gerado no turno e returno.
 
-5. Determinar o campeão, considerando: Vitória = 3 pontos; Empate = 1 ponto, sem 
+5. Determinar o campeão, considerando: Vitória = 3 pontos; Empate = 1 ponto, sem
 levar em conta saldo de gols.
 
-6. Sinalizar as partidas com o texto "Rodada Dupla" quando houverem dois jogos na 
+6. Sinalizar as partidas com o texto "Rodada Dupla" quando houverem dois jogos na
 mesma cidade na mesma rodada, como no exemplo abaixo:
 
 Vasco vs Flamengo - Rio de Janeiro - Rodada 1 <br>
