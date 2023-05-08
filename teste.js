@@ -52,5 +52,12 @@ function criarTabelaJogos() {
 }
 
 function imprimirRodadas() {
-
+    var rodadas = criarTabelaJogos();
+    console.log(rodadas)
+    for (var i = 0; i < rodadas.length; i++) {
+       // document.write('Rodada ' + (i + 1) + ': ' + '<br>')
+        for (var j = 0; j < rodadas[i].length; j++) {
+            document.write(rodadas[i][j].timeMandante.nome + ' vs ' + rodadas[i][j].timeVisitante.nome + ' - ' + rodadas[i][j].timeMandante.estado + ' - Rodada '+ (i+1) +'<br>')
+        }
+    }
 }
