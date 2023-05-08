@@ -52,7 +52,6 @@ function criarTabelaJogos() {
             var golsVisitante = geraGolsAte5();
             jogoReturno.resultado = golsMandante + 'x' + golsVisitante;
             return jogoReturno;
-
         });
     });
     return tabela.concat(returno);
@@ -61,11 +60,18 @@ function criarTabelaJogos() {
 function imprimirRodadas() {
     rodadas = criarTabelaJogos();
     for (var i = 0; i < rodadas.length; i++) {
+        var jogosPorEstado = verificaRodadaDupla(rodadas[i]);
+        console.log(jogosPorEstado);
         for (var j = 0; j < rodadas[i].length; j++) {
             var timeMandante = rodadas[i][j].timeMandante;
             var timeVisitante = rodadas[i][j].timeVisitante;
-            document.write(timeMandante.nome + ' vs ' + timeVisitante.nome + ' - ' + timeMandante.estado + ' - Rodada ' + (i + 1) + '<br>');
-            document.write(rodadas[i][j].resultado + '<br>');
+            document.write(timeMandante.nome + ' vs ' + timeVisitante.nome + ' - ' + timeMandante.estado + ' - Rodada ' + (i + 1));
+            if(jogosPorEstado[timeMandante.estado] > 1){
+                document.write(' - (RODADA DUPLA)<br/>');
+            } else {
+                document.write('<br/>');
+            }
+            document.write(rodadas[i][j].resultado + '<br/>');
             var placar = rodadas[i][j].resultado.split('x');
             var resultadoMandante = resultado(placar[0], placar[1]);
             if (resultadoMandante == 'vitoria') {
@@ -76,15 +82,25 @@ function imprimirRodadas() {
                 timeMandante.pontosCampeonato += 1;
                 timeVisitante.pontosCampeonato += 1;
             }
-            console.log(rodadas[i][j].resultado)
-            console.log(timeMandante.nome + ' ' + timeMandante.pontosCampeonato)
-            console.log(timeVisitante.nome + ' ' + timeVisitante.pontosCampeonato)
-
         }
     }
     var campeao = verificaCampeao();
-    document.write('CAMPEAO: ' + campeao.nome);
+    console.log(times); //verificar pontos pelo array
+    document.write('<b>CAMPEAO: ' + campeao.nome + '</b>');
 
+}
+
+function verificaRodadaDupla(rodada) {
+    var estados = {};
+    for (var i = 0; i < rodada.length; i++) {
+        var estado = rodada[i].timeMandante.estado;
+        if (!estados[estado]) {
+            estados[estado] = 1;
+        } else {
+            estados[estado]++;
+        }
+    }
+    return estados;
 }
 
 function verificaCampeao() {
