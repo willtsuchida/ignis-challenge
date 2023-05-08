@@ -37,5 +37,20 @@ function criarTabelaJogos() {
         tabela.push(rodada);
         copiaTimes.splice(1, 0, copiaTimes.pop());
     }
-    return tabela;
+
+    var returno = tabela.map((rodada) => {
+        return rodada.map((jogo) => {
+            return {
+                timeMandante: jogo.timeVisitante,
+                timeVisitante: jogo.timeMandante
+            };
+        });
+    });
+
+
+    return tabela.concat(returno);
+}
+
+function imprimirRodadas() {
+
 }
