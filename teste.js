@@ -1,5 +1,4 @@
 var times = [];
-var pilhaTimes = times
 
 function lerDados() {
     var texto = document.getElementById('texto').value.split('\n');
@@ -11,7 +10,6 @@ function lerDados() {
         }
         times.push(time);
     }
-    console.log(times)
 }
 
 function criarTabelaJogos() {
@@ -24,9 +22,9 @@ function criarTabelaJogos() {
 
     var tabela = [];
 
-    for (let i = 0; i < copiaTimes.length - 1; i++) {
+    for (var i = 0; i < copiaTimes.length - 1; i++) {
         var rodada = [];
-        for (let j = 0; j < copiaTimes.length / 2; j++) {
+        for (var j = 0; j < copiaTimes.length / 2; j++) {
             var timeMandante = copiaTimes[j];
             var timeVisitante = copiaTimes[copiaTimes.length - 1 - j];
             rodada.push({
@@ -46,18 +44,14 @@ function criarTabelaJogos() {
             };
         });
     });
-
-
     return tabela.concat(returno);
 }
 
 function imprimirRodadas() {
     var rodadas = criarTabelaJogos();
-    console.log(rodadas)
     for (var i = 0; i < rodadas.length; i++) {
-       // document.write('Rodada ' + (i + 1) + ': ' + '<br>')
         for (var j = 0; j < rodadas[i].length; j++) {
-            document.write(rodadas[i][j].timeMandante.nome + ' vs ' + rodadas[i][j].timeVisitante.nome + ' - ' + rodadas[i][j].timeMandante.estado + ' - Rodada '+ (i+1) +'<br>')
+            document.write(rodadas[i][j].timeMandante.nome + ' vs ' + rodadas[i][j].timeVisitante.nome + ' - ' + rodadas[i][j].timeMandante.estado + ' - Rodada '+ (i+1) +'<br>');
         }
     }
 }
